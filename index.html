@@ -1,1 +1,25 @@
-test page
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>GNU Package: phpGroupWare</title>
+		<script type="text/javascript">
+			function countDown()
+			{
+				if(!document.getElementById)
+				{
+					return false;
+				}
+				var oTarget = document.getElementById('countdown');
+				oTarget.innerHTML = parseInt(oTarget.innerHTML) - 1;
+				setTimeout('countDown()', 1000);
+			}
+		</script>
+		<meta http-equiv="refresh" content="5;url=http://phpgroupware.org">
+	</head>
+	<body onload="countDown();">
+		<h1>phpGroupWare</h1>
+		<p>For more information regarding phpGrouopWare, <a href="http://phpgroupware.org">please visit our website</a>.</p>
+		<p>You should be redirected there in less than <span id="countdown">10</span> seconds.</p>
+	</body>
+</html>
